@@ -23,3 +23,7 @@ console.log("adding items in cart")
 console.log("Checking the cart items")
 
 console.log("selecting items from cart to purchase")
+
+console.log("purchased the items I liked most")
+
+console.log("debugging cherry pick for conflicts")
