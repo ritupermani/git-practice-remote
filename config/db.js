@@ -19,3 +19,5 @@ GPUBuffer,kklkbvgfcgvhbjkl
 console.log("ye db file ko hum check kr rhe hai")
 
 console.log("adding items in cart")
+
+console.log("Checking the cart items")
