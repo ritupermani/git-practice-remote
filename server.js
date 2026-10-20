@@ -29,12 +29,18 @@ const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
+<<<<<<< HEAD
 
+=======
+>>>>>>> feature/server-setup
 });
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> feature/server-setup
 console.log("hreyy this line is foir cherry prsctice fro ritu as well i ")
 
 console.log("Add some new features in this file") 
@@ -45,8 +51,6 @@ console.log("first cherry dude")
 
 console.log("second cherry dude")
 
-
-console.log("third cherry dude")
 console.log("third cherry dude")
 
 console.log("fourth cherry dude")
