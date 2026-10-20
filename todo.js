@@ -51,3 +51,8 @@ showTodos();
 completeTodo(1);
 deleteTodo(2);
 showTodos();
+
+
+
+
+console.log("fifth cherry dudein todo")
