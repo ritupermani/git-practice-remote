@@ -1,13 +1,32 @@
+const express = require("express");
 const pool = require("./config/db");
+require("dotenv").config();
 
-async function connectDB() {
+const app = express();
+
+app.use(express.json());
+
+app.get("/", (req, res) => {
+  res.send("Server is running!");
+});
+
+app.get("/health", async (req, res) => {
   try {
-    const connection = await pool.getConnection();
-    console.log("MySQL connected successfully!");
-    connection.release();
+    await pool.query("SELECT 1");
+    res.status(200).json({
+      status: "OK",
+      message: "Server and database are running",
+    });
   } catch (error) {
-    console.error("MySQL connection failed:", error.message);
+    res.status(500).json({
+      status: "ERROR",
+      message: "Database connection failed",
+    });
   }
-}
+});
 
-connectDB();
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
