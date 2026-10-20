@@ -15,3 +15,7 @@ const pool = mysql.createPool({
 module.exports = pool;
 
 GPUBuffer,kklkbvgfcgvhbjkl
+
+
+console.log("adding items in cart")
+
