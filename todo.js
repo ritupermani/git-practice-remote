@@ -56,3 +56,5 @@ showTodos();
 
 
 console.log("fifth cherry dudein todo")
+
+console.log("adding items in todo list")
